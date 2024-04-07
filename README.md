@@ -98,6 +98,7 @@ The winner of a fight is determined based on the skills of one fighter and the w
 
 The winner would be Fighter1, as he has skills that Fighter2 is weak against.
 
+
 ## Testing
 
 Run the following command to execute the tests:
@@ -113,6 +114,16 @@ To generate a coverage report:
 ```bash
 coverage run -m pytest
 coverage report
+```
+
+## Migrate
+
+Migrate first before implement seed
+
+```bash
+flask db init
+flask db migrate
+flask db upgrade
 ```
 
 ## Seed Data
