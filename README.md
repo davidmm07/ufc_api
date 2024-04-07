@@ -19,73 +19,73 @@ A Flask-based API for managing a UFC tournament where fighters have various skil
 
 ### Clone the Repository
 
-\`\`\`bash
-git clone https://github.com/yourusername/ufc-tournament-api.git
+```bash
+git clone https://github.com/davidmm07/ufc_api.git
 cd ufc-tournament-api
-\`\`\`
+```
 
 ### Install Dependencies
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### Run the Application
 
-\`\`\`bash
+```bash
 python run.py
-\`\`\`
+```
 
 ## API Endpoints
 
 ### Get All Fighters
 
-\`\`\`http
+```http
 GET /fighters
-\`\`\`
+```
 
 ### Get Single Fighter
 
-\`\`\`http
+```http
 GET /fighters/{fighter_id}
-\`\`\`
+```
 
 ### Add Fighter
 
-\`\`\`http
+```http
 POST /fighters
-\`\`\`
+```
 
 **Request Body**
 
-\`\`\`json
+```json
 {
     "name": "John",
     "skills": "Jiu-Jitsu,Wrestling",
     "weaknesses": "Striking"
 }
-\`\`\`
+```
 
 ### Add Fight
 
-\`\`\`http
+```http
 POST /fights
-\`\`\`
+```
 
 **Request Body**
 
-\`\`\`json
+```json
 {
     "fighter1_id": 1,
     "fighter2_id": 2
 }
-\`\`\`
+```
 
 ### Get Fight Winner
 
-\`\`\`http
+```http
 GET /fights/{fight_id}/winner
-\`\`\`
+```
 
 ## Fight Logic
 
@@ -102,26 +102,26 @@ The winner would be Fighter1, as he has skills that Fighter2 is weak against.
 
 Run the following command to execute the tests:
 
-\`\`\`bash
+```bash
 pytest
-\`\`\`
+```
 
 ## Coverage
 
 To generate a coverage report:
 
-\`\`\`bash
+```bash
 coverage run -m pytest
 coverage report
-\`\`\`
+```
 
 ## Seed Data
 
 To seed the database with initial data:
 
-\`\`\`bash
+```bash
 flask seed_db
-\`\`\`
+```
 
 ## Contributing
 
