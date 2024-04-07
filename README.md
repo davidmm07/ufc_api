@@ -21,7 +21,7 @@ A Flask-based API for managing a UFC tournament where fighters have various skil
 
 ```bash
 git clone https://github.com/davidmm07/ufc_api.git
-cd ufc-tournament-api
+cd ufc_api
 ```
 
 ### Install Dependencies
